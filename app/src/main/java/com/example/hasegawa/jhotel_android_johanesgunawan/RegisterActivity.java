@@ -28,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String name = emailInput.getText().toString();
+                final String name = nameInput.getText().toString();
                 final String email = emailInput.getText().toString();
                 final String password = passInput.getText().toString();
                 Response.Listener<String> responseListener = new Response.Listener<String>() {

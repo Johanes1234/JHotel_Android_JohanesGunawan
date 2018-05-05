@@ -9,10 +9,9 @@ import java.util.Map;
 public class LoginRequest extends StringRequest {
     private static final String Regis_URL = "insert your New Customer API URL here" ;
     private Map<String, String> params;
-    public LoginRequest(String name, String email, String password, Response.Listener<String> listener) {
+    public LoginRequest(String email, String password, Response.Listener<String> listener) {
         super(Method.POST, Regis_URL, listener, null);
         params = new HashMap<>();
-        params.put("name", name);
         params.put("email", email);
         params.put("password", password);
     }
